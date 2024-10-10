@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import AuthLayout from "./components/auth/authLayout"
 import AuthSignIn from "./pages/auth/authSignIn"
-import AuthSignUp from "./pages/auth/authSignup"
+import AuthSignUp from "./pages/auth/authSignUp"
 import AdminLayout from "./components/admin/layout"
 import AdminDashboard from "./pages/admin/dashboard"
 import AdminProducts from "./pages/admin/products"
@@ -16,14 +16,12 @@ import Home from "./pages/customer/home"
 import CheckAuth from "./components/common/checkAuth"
 
 
-
-
 function App() {
 
   const isAuthenticated = true;
   const user = {
     name : "junaid",
-    role : 'user'
+    role : "customer"
   };
 
   return (
@@ -68,3 +66,4 @@ function App() {
 }
 
 export default App
+ 
